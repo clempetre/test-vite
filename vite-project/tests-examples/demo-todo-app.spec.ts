@@ -69,7 +69,7 @@ test.describe('New Todo', () => {
   });
 });
 
-test.describe('Mark all as completed', () => {
+test.describe('Mark all as completed', () => { 
   test.beforeEach(async ({ page }) => {
     await createDefaultTodos(page);
     await checkNumberOfTodosInLocalStorage(page, 3);
